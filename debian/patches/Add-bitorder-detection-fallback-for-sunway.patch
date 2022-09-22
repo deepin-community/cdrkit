@@ -1,0 +1,18 @@
+Description: Add bitorder detection fallback for sunway
+Author: Miao Changwei <miaochangwei@uniontech.com>
+
+---
+Last-Update: 2022-05-26
+
+--- cdrkit-1.1.11.orig/include/btorder.h
++++ cdrkit-1.1.11/include/btorder.h
+@@ -112,7 +112,8 @@ error  Only one of _BIT_FIELDS_LTOH or _
+ 
+ #	if defined(__i386__) || defined(__i386) || defined(i386) || \
+ 	    defined(__alpha__) || defined(__alpha) || defined(alpha) || \
+-	    defined(__arm__) || defined(__arm) || defined(arm)
++	    defined(__arm__) || defined(__arm) || defined(arm) || \
++	    defined(__sw_64__)
+ #		define _BIT_FIELDS_LTOH
+ #	endif
+ 
