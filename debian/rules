@@ -41,7 +41,7 @@ clean:
 	dh_testdir
 	dh_testroot
 	-$(MAKE) -C 3rd-party/zisofs_tools distclean
-	-./.clean
+	-./ clean
 	dh_clean
 	 # clean up the stuff dh_clean leaves behind
 	-rm -rf debian/build debian/files
