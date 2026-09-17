@@ -1,12 +1,8 @@
-cdrkit (9:1.1.11.1-2+dde) unstable; urgency=medium
+cdrkit (9:1.1.11.1-1+dde) UNRELEASED; urgency=medium
 
-  [ Joerg Jaspert ]
   * update
 
-  [ tunaichao ]
-  * Rebuild with LTO enabled (dpkg vendor feature optimize/lto).
-
- -- tunaichao <tunaichao@uniontech.com>  Fri, 11 Sep 2026 10:04:56 +0800
+ -- Joerg Jaspert <joerg@debian.org>  Tue, 14 Jun 2022 14:29:25 +0800
 
 cdrkit (9:1.1.11.1-1+dde) unstable; urgency=medium
 
